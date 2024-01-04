@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .header {
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+        z-index: 3;
+        padding: 8px 16px;
+        opacity: 0.5;
+      }
+      .header__button {
+        width: 25%;
+        color: white;
+        text-align: center;
+        padding: 12px 16px;
+        text-decoration: none;
+        font-size: 12px;
+      }
+      .header__button:hover{
+        color:black;
+        background-color:#f1f1f1;
+      }
+      .main-pic {
+        height: 75vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        filter: grayscale(50%);
+        background-image: url("https://www.w3schools.com/w3images/coffeehouse.jpg");
+        display: flex;
+      }
+      .content {
+        padding: 0.01em 16px;
+      }
+      .content__amw{
+        max-width: 700px;
+        margin: auto;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      .content__about--quote {
+        background-color: #f1f1f1;
+        border-left: solid 6px #ccc;
+        margin: 16px 0;
+        padding: 0 16px;
+      }
+      .content__amw--input {
+        border: #ccc solid 1px;
+        padding: 16px 8px;
+        width: 100%;
+        font-size: 18px;
+      }
+      .credit {
+        padding: 66px 0;
+        text-align: center;
+        font-size: 18px;
+        background-color: #f1f1f1;
+      }
+      .credit__span {
+        color: black;
+      }
+      .credit__span:hover {
+        color: rgb(123, 200, 7);
+      }
+      ::placeholder{
+        font-family: serif;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body style="height:100%;">
+    <div style="background-color: #f5f4f0">
+      <div class="header">
+        <a href="#home" class="header__button">HOME</a>
+        <a href="#about" class="header__button">ABOUT</a>
+        <a href="#menu" class="header__button">MENU</a>
+        <a href="#where" class="header__button">WHERE</a>
+      </div>
+      <div class="main-pic">
+        <div
+          style="
+            height: fit-content;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 90px;
+            width: 191px;
+            text-align: center;
+            word-break: keep-all;
+            justify-self: center;
+          "
+        >
+          the Cafe
+        </div>
+        <div style="position: absolute; bottom:0; display: flex; justify-content: space-between; width:100%;">
+          <div
+          style="
+            height: fit-content;
+            margin: 12px 24px;
+            padding: 0 8px;
+            color: white;
+            background-color: black;
+            left: 0;
+          ">
+          Open from 6am to 5pm</div>
+        <div
+          style="
+            padding: 12px 24px;
+            color: white;
+            height: fit-content;
+            right: 0;
+          ">
+          15 Adr street, 5015</div>
+        </div>
+      </div>
+      </div>
+      <div class="content">
+        <div class="content__amw" id="about">
+          <p style="text-align: center; padding: 64px 0; margin: 10px 0">
+            <span
+              style="
+                color: white;
+                background-color: black;
+                font-size: 18px;
+                padding: 0 18px;
+                letter-spacing: 4px;
+              "
+              >ABOUT THE CAFE</span
+            >
+          </p>
+          <p>
+            The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+          <p>
+            In addition to our full espresso and brew bar menu, we serve fresh
+            made-to-order breakfast and lunch sandwiches, as well as a selection
+            of sides and salads and other good stuff.
+          </p>
+          <div class="content__about--quote">
+            <p style="padding: 18px 0 2px 0; font-style: italic">
+              "Use products from nature for what it's worth - but never too
+              early, nor too late." Fresh is the new sweet.
+            </p>
+            <p style="padding: 2px 0 18px 0">
+              "Chef, Coffeeist and Owner: Liam Brown
+            </p>
+          </div>
+          <img
+            src="https://www.w3schools.com/w3images/coffeeshop.jpg"
+            style="width: 100%; margin-top: 16px; filter: grayscale(75%)"
+          />
+          <p>Opening hours: everyday from 6am to 5pm.</p>
+          <p>Address: 15 Adr street, 5015, NY</p>
+        </div>
+        <div class="content__amw" id="menu">
+          <p style="text-align: center; padding: 48px 0; margin: 10px 0">
+            <span
+              style="
+                color: white;
+                background-color: black;
+                font-size: 18px;
+                padding: 0 18px;
+                letter-spacing: 4px;
+              "
+              >THE MENU</span
+            >
+          </p>
+          <img
+            src="https://www.w3schools.com/w3images/coffeehouse2.jpg"
+            style="filter: grayscale(75%); margin-top: 32px; width: 100%"
+          />
+        </div>
+        <div class="content__amw" style="padding: 0 16px 32px 16px !important" id="where">
+          <p style="text-align: center; padding: 48px 0; margin: 10px 0">
+            <span
+              style="
+                color: white;
+                background-color: black;
+                font-size: 18px;
+                padding: 0 18px;
+                letter-spacing: 4px;
+              "
+              >WHERE TO FIND US</span
+            >
+          </p>
+          <p style="margin: 18px 0">Find us at some adress at some place.</p>
+          <img
+            src="https://www.w3schools.com/w3images/map.jpg"
+            style="width: 100%; filter: grayscale(75%)"
+          />
+          <p style="margin: 18px 0">
+            <span
+              style="
+                background-color: black;
+                color: white;
+                padding: 0 8px;
+                text-align: center;
+              "
+              >FYI !</span
+            >
+            We offer full-service catering for any event, large or small. We
+            understand your needs and we will cater the food to satisfy the
+            biggest criteria of them all, both look and taste.
+          </p>
+          <p style="margin: 18px 0">
+            Reserve a table, asker for today's special or send us a message:
+          </p>
+          <form>
+            <p>
+              <input
+                class="content__amw--input"
+                type="text"
+                placeholder="Name"
+                required
+              />
+            </p>
+            <p>
+              <input
+                class="content__amw--input"
+                type="text"
+                placeholder="How many people"
+                required
+              />
+            </p>
+            <p>
+              <input
+                class="content__amw--input"
+                type="datetime-local"
+                required
+              />
+            </p>
+            <p>
+              <input
+                class="content__amw--input"
+                type="text"
+                placeholder="Message \ Special requirements"
+                required
+              />
+            </p>
+            <button
+              type="submit"
+              style="
+                padding: 8px 16px;
+                color: white;
+                background-color: black;
+                border: none;
+                font-size: 15px;
+                font-family: serif;
+              "
+            >
+              SEND MESSAGE
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="credit">
+        <p>
+          Powered by
+          <a
+            href="https://www.w3schools.com/w3css/default.asp"
+            class="credit__span"
+            >w3.css</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
